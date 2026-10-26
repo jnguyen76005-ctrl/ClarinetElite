@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "scheme": "your-app-scheme",
+    "experiments": {
+      "typedRoutes": true
+    },
+    "name": "Clarinet Elite",
+    "slug": "SHELFIE_APP",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/img/clarinetLogo_dark.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.JaydenEliteNguyen.ClarinetElite",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Allow this app to use your microphone to tune your clarinet."
+        }
+      ],
+      "expo-font",
+      "expo-status-bar",
+      "expo-asset",
+      "expo-audio",
+      "react-native-audio-api"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "0b0f64b8-b0c3-46d9-81f5-d15b28997d98"
+      }
+    }
+  }
+}
